@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-symlink-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joe Reed",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "develop-gatsby": "cd packages/my-gatsby-site && yarn develop",
+    "develop-vite": "cd packages/vite-lib-build && yarn develop",
+    "develop-rollup": "cd packages/rollup-lib-build && yarn develop",
+    "build-vite": "cd packages/vite-lib-build && yarn build",
+    "build-rollup": "cd packages/rollup-lib-build && yarn build",
+    "build-all": "yarn build-vite && yarn build-rollup"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "my-rollup-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.js",
+  "scripts": {
+    "build": "rollup -c",
+    "develop": "rollup -wc"
+  },
+  "dependencies": {
+    "rollup": "^3.20.2"
+  }
+}

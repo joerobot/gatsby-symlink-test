@@ -1,0 +1,27 @@
+{
+  "name": "my-vite-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
+    },
+    "./alternate": {
+      "import": "./dist/alternate.js",
+      "require": "./dist/alternate.cjs"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "develop": "vite build -w"
+  },
+  "dependencies": {
+    "vite": "^4.2.1"
+  }
+}
